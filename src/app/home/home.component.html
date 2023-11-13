@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="row">
+    <!--About Me-->
+    <div class="col-lg shadow border m-1">
+      <div class="text-center">
+        <h2 class="font-weight-light display-5 fs-2 mt-3">About Me</h2>
+        <img src="../../assets/AMP_0798.jpg" alt="My Picture" with="100px" height="256" class="rounded-circle" />
+        <p>
+          <span *ngIf="showPartialText" id="partial-text"> Hello there! I'm a 21-year-old web developer with a passion for
+            crafting web applications that cater to diverse audiences. With a
+            flexible schedule and</span>
+          <span *ngIf="!showPartialText" id="full-text">Hello there! I'm a 21-year-old web developer with a passion for
+            crafting web applications that cater to diverse audiences. With a
+            flexible schedule and the availability to work five days a week, I'm
+            eager to contribute my skills to your company. My journey as a web
+            developer began with a year of web design, where I honed my skills in
+            creating visually appealing websites. To deepen my coding expertise, I
+            completed the Udacity Cross Skilling Angular Nanodegree. This program
+            equipped me with knowledge of Components, Libraries, and Data,
+            enabling me to develop my own web applications.</span>
+          <a href="javascript:void(0)" (click)="toggleText()">
+            {{ showPartialText ? 'Show More' : 'Show Less' }}
+          </a>
+        </p>
+      </div>
+    </div>
+    <!--Featured Project-->
+    <div class="col-lg shadow border m-1">
+      <div class="text-center">
+        <h2 class="font-weight-light display-5 fs-2 mt-3">Featured Project</h2>
+        <h4>{{featuredProject.name}}</h4>
+      </div>
+      <carousel>
+        <div *ngFor="let picture of featuredProject.pictures; let i = index">
+          <slide *ngIf="i === activeSlideIndex">
+            <img src="{{ picture }}" alt="Slide" class="d-block w-100">
+          </slide>
+        </div>
+
+        <a class="carousel-control-prev" role="button" data-slide="prev" (click)="prevSlide()">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only ">Previous</span>
+        </a>
+        <a class="carousel-control-next" role="button" data-slide="next" (click)="nextSlide()">
+          <span class="carousel-control-next-icon text-dark" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </carousel>
+
+
+      <p class="mt-2">{{featuredProject.summary}}</p>
+      <p>Visit the portfolio section to learn more!</p>
+    </div>
+  </div>
+</div>
