@@ -1,1 +1,114 @@
-<p>resume works!</p>
+<div class="container text-center">
+    <button type="button" class="btn btn-primary mb-5 shadow border" (click)="DownloadFile()">Download PDF
+        Resume</button>
+       
+
+    <div class="pb-2 ">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block accordion-btn justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Work Experience</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color: black;">></div>
+                        <div *ngIf="isWorkExperienceOpen" style="color: black;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-3">Front-End developer </h2>
+                    <h3 class="text-primary">Freelancer</h3>
+                    <ul>
+                        <li>Designed and implemented responsive user interfaces using HTML, CSS, and JavaScript.</li>
+                        <li>Collaborated with cross-functional teams to translate design mockups into interactive web applications.</li>
+                        <li>Ensured the seamless integration of front-end components with back-end systems, ensuring optimal performance and user experience.</li>
+                        <li>Implemented and maintained code standards, optimizing website speed and performance.</li>
+                        <li>Utilized version control systems, such as Git, for efficient collaboration and code management.</li>
+                        <li>Performed browser testing and debugging to ensure cross-browser compatibility.</li>
+                        <li>Stayed current with industry trends and emerging technologies to continuously improve development processes.</li>
+                    </ul>
+                </div>
+            </accordion-group>
+
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Education</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isEducationOpen" style="color: black;">></div>
+                        <div *ngIf="isEducationOpen" style="color: black;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    
+                    <h2 class="mb-3">Bachelor of Arts</h2>
+                    <h3 class="text-primary">Al-Zagazig University</h3>
+                    <ul>
+                        <li>Diligent student committed to academic excellence</li>
+                        <li>Enthusiastic learner with a focus on French literature</li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isCertificationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Certifications</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isCertificationOpen" style="color: black;">></div>
+                        <div *ngIf="isCertificationOpen" style="color: black;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                   
+                    <h3 class="text-primary">Angular Course</h3>
+                    <ul>
+                        <li>Completed Udacity Cross Skilling Angular Nanodegree from Ministry of Communications and Information Technology.</li>
+                    </ul>
+                    <div class="row d-flex justify-content-center">
+                        <div class="text-center">
+                            <img src="assets/cer.png" alt="Certification" style="width: 450px;">
+                        </div>
+                        <button type="button" class="btn btn-primary mb-5 shadow border w-25" (click)="DownloadFileCertification()">Download PDF Certification</button>
+                    </div>
+                </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link">Skills</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkillsOpen" style="color: black;">></div>
+                        <div *ngIf="isSkillsOpen" style="color: black;">v</div>
+                    </div>
+                </button>
+                <div class="row" style="text-align: left;">
+                    <div class="col">
+                        <h3>Programming Languages:</h3>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>SCSS</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Frameworks:</h3>
+                        <ul>
+                            <li>Angular</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Other Skills:</h3>
+                        <ul>
+                            <li>Source Control via Git</li>
+                        </ul>
+                    </div>
+                </div>
+            </accordion-group>
+
+        </accordion>
+    </div>
+
+</div>
