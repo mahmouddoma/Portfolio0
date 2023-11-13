@@ -12,9 +12,9 @@ export class ProjectsService {
       id: 0,
       name: 'Angular App',
       pictures: [
-        '../../assets/WhatsApp Image 2023-10-28 at 21.53.31_6dfab6cd.jpg',
-        '../../assets/WhatsApp Image 2023-10-28 at 21.54.09_932deef4.jpg',
-        '../../assets/WhatsApp Image 2023-10-28 at 21.54.49_498768ee.jpg',
+        'assets/WhatsApp Image 2023-10-28 at 21.53.31_6dfab6cd.jpg',
+        'assets/WhatsApp Image 2023-10-28 at 21.54.09_932deef4.jpg',
+        'assets/WhatsApp Image 2023-10-28 at 21.54.49_498768ee.jpg',
       ],
       projectLink: 'https://mahmouddoma.github.io/recipeApp/recipes',
       summary:
@@ -27,9 +27,9 @@ export class ProjectsService {
       id: 1,
       name: 'Simple task for service in Angular ',
       pictures: [
-        '../../assets/Screenshot 2023-10-29 074553.png',
-        '../../assets/Screenshot 2023-10-29 074553.png',
-        '../../assets/Screenshot 2023-10-29 074553.png'
+        'assets/Screenshot 2023-10-29 074553.png',
+        'assets/Screenshot 2023-10-29 074553.png',
+        'assets/Screenshot 2023-10-29 074553.png'
       ],
       projectLink: 'https://mahmouddoma.github.io/service-app/',
       summary: 'Simple app to add a new service',
@@ -41,9 +41,9 @@ export class ProjectsService {
       id: 2,
       name: 'Prixima',
       pictures: [
-        '../../assets/prixima00.png',
-        '../../assets/prixima01.png',
-        '../../assets/prixima02.png',
+        'assets/prixima00.png',
+        'assets/prixima01.png',
+        'assets/prixima02.png',
       ],
       projectLink: ' https://mahmouddoma.github.io/Prixima-prohect/',
       summary: 'Front-End web page developed using HTML, CSS and JavaScript',
@@ -55,9 +55,9 @@ export class ProjectsService {
       id: 3,
       name: 'Web Angualr Form',
       pictures: [
-        '../../assets/form.png',
-        '../../assets/form.png',
-        '../../assets/form.png',
+        'assets/form.png',
+        'assets/form.png',
+        'assets/form.png',
       ],
       projectLink: 'https://mahmouddoma.github.io/formTd/',
       summary: 'Simple Web form using Angular forms ',
@@ -69,9 +69,9 @@ export class ProjectsService {
       id: 4,
       name: 'To DO List',
       pictures: [
-        '../../assets/Todo.png',
-        '../../assets/Todo.png',
-        '../../assets/Todo.png',
+        'assets/Todo.png',
+        'assets/Todo.png',
+        'assets/Todo.png',
       ],
       projectLink: 'https://mahmouddoma.github.io/Todo-App/',
       summary:
