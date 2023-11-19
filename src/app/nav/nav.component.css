@@ -4,7 +4,7 @@ a {
 }
 
 .nav-link {
-    color: #333;
+    color: #f4f4f4;
     font-size: 18px;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -16,6 +16,6 @@ a {
 }
 
 .nav-link:hover {
-    color: #007bff;
+    color: #43474b;
 }
 
