@@ -1,9 +1,7 @@
 <div class="container text-center">
-    <button type="button" class="btn btn-primary mb-5 shadow border" (click)="DownloadFile()">Download PDF
-        Resume</button>
-       
+    <button type="button" class="btn btn-primary mb-3 shadow border" (click)="DownloadFile()">Download PDF Resume</button>
 
-    <div class="pb-2 ">
+    <div class="pb-2">
         <accordion [isAnimated]="true" class="shadow">
             <accordion-group [(isOpen)]="isWorkExperienceOpen">
                 <button class="btn btn-block accordion-btn justify-content-between d-flex w-100" accordion-heading>
@@ -15,7 +13,7 @@
                     </div>
                 </button>
                 <div style="text-align: left;">
-                    <h2 class="mb-3">Front-End developer </h2>
+                    <h2 class="mb-3">Front-End developer</h2>
                     <h3 class="text-primary">Freelancer</h3>
                     <ul>
                         <li>Designed and implemented responsive user interfaces using HTML, CSS, and JavaScript.</li>
@@ -39,7 +37,6 @@
                     </div>
                 </button>
                 <div style="text-align: left;">
-                    
                     <h2 class="mb-3">Bachelor of Arts</h2>
                     <h3 class="text-primary">Al-Zagazig University</h3>
                     <ul>
@@ -48,6 +45,7 @@
                     </ul>
                 </div>
             </accordion-group>
+
             <accordion-group [(isOpen)]="isCertificationOpen">
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                     <div style="visibility: hidden;">></div>
@@ -58,19 +56,19 @@
                     </div>
                 </button>
                 <div style="text-align: left;">
-                   
                     <h3 class="text-primary">Angular Course</h3>
                     <ul>
                         <li>Completed Udacity Cross Skilling Angular Nanodegree from Ministry of Communications and Information Technology.</li>
                     </ul>
                     <div class="row d-flex justify-content-center">
                         <div class="text-center">
-                            <img src="assets/cer.png" alt="Certification" style="width: 450px;">
+                            <img loading="lazy" src="assets/cer.png" alt="Certification" style="width: 100%;" class="img-fluid ">
                         </div>
-                        <button type="button" class="btn btn-primary mb-5 shadow border w-25" (click)="DownloadFileCertification()">Download PDF Certification</button>
+                        <button type="button" class="btn btn-primary mb-3 shadow border w-100" (click)="DownloadFileCertification()">Download PDF Certification</button>
                     </div>
                 </div>
             </accordion-group>
+
             <accordion-group [(isOpen)]="isSkillsOpen">
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                     <div style="visibility: hidden;">></div>
@@ -80,8 +78,8 @@
                         <div *ngIf="isSkillsOpen" style="color: black;">v</div>
                     </div>
                 </button>
-                <div class="row" style="text-align: left;">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-md-4">
                         <h3>Programming Languages:</h3>
                         <ul>
                             <li>JavaScript</li>
@@ -92,14 +90,14 @@
                             <li>Git</li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col-md-4">
                         <h3>Frameworks:</h3>
                         <ul>
                             <li>Angular</li>
                             <li>Bootstrap</li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col-md-4">
                         <h3>Other Skills:</h3>
                         <ul>
                             <li>Source Control via Git</li>
@@ -110,5 +108,4 @@
 
         </accordion>
     </div>
-
 </div>

@@ -1,0 +1,67 @@
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#facebook { 
+    background-color: #0866ff;
+}
+
+#facebook h3 {
+    color: #0866ff;
+}
+
+img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.icon {
+    display: flex;
+    margin-top: 15px;
+}
+
+.icon a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    margin-right: 10px;
+}
+@media (max-width: 768px) {
+    .col-4,
+    .col-8 {
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .icon {
+        align-items: center;
+    }
+
+    .icon .btn {
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .fs-6 {
+        font-size: 16px;
+    }
+}

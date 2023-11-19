@@ -63,3 +63,15 @@ accodion-group::ng-deeppage .btn-link {
     color: #fff;
     font-weight: bold;
 }
+.container {
+    padding: 20px;
+  }
+  
+  .btn {
+    font-size: 1rem;
+  }
+  
+  .btn-primary {
+    margin-bottom: 15px;
+    padding: 10px 20px;
+  }

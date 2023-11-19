@@ -4,9 +4,12 @@
     <div class="col-lg shadow border m-1">
       <div class="text-center">
         <h2 class="font-weight-light display-5 fs-2 mt-3">About Me</h2>
-        <img src="assets/AMP_0798.jpg" alt="My Picture" with="100px" height="256" class="rounded-circle" />
+        <div class="image d-flex justify-content-center align-items-center">
+          <img loading="lazy" src="assets/AMP_0798.jpg" alt="My Picture" class="img-fluid" style="max-width: 300px; width: 200px; height: 200px;">
+        </div>
         <p>
-          <span *ngIf="showPartialText" id="partial-text"> Hello there! I'm a 21-year-old web developer with a passion for
+          <span *ngIf="showPartialText" id="partial-text"> Hello there! I'm a 21-years-old web developer with a passion
+            for
             crafting web applications that cater to diverse audiences. With a
             flexible schedule and</span>
           <span *ngIf="!showPartialText" id="full-text">Hello there! I'm a 21-year-old web developer with a passion for
@@ -33,13 +36,13 @@
       <carousel>
         <div *ngFor="let picture of featuredProject.pictures; let i = index">
           <slide *ngIf="i === activeSlideIndex">
-            <img src="{{ picture }}" alt="Slide" class="d-block w-100">
+            <img loading="lazy" src="{{ picture }}" alt="Slide" class="d-block w-100">
           </slide>
         </div>
 
         <a class="carousel-control-prev" role="button" data-slide="prev" (click)="prevSlide()">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only ">Previous</span>
+          <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" role="button" data-slide="next" (click)="nextSlide()">
           <span class="carousel-control-next-icon text-dark" aria-hidden="true"></span>

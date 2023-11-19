@@ -6,7 +6,7 @@
   <carousel>
     <div *ngFor="let picture of project.pictures; let i = index">
       <slide *ngIf="i === activeSlideIndex">
-        <img src="{{ picture }}" alt="Slide" class="d-block w-100">
+        <img loading="lazy" src="{{ picture }}" alt="Slide" class="d-block w-100">
       </slide>
     </div>
     <a class="carousel-control-prev" role="button" data-slide="prev" (click)="prevSlide()">

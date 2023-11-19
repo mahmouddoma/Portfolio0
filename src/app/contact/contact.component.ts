@@ -10,4 +10,5 @@ export class ContactComponent {
   constructor(private titleService: Title){
     this.titleService.setTitle('Mahmoud Doma - Contact')
   }
+  
 }

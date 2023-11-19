@@ -7,7 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './about/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
@@ -15,12 +15,13 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { ProjectsService } from './_services/projects.service';
 import { ModalModule } from 'ngx-bootstrap/modal';
-import { ProjectModalComponent } from './project-modal/project-modal.component'
+import { ProjectModalComponent } from './project-modal/project-modal.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { FormsModule } from '@angular/forms';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
-
+import { HttpClientModule } from '@angular/common/http';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { AccordionModule } from 'ngx-bootstrap/accordion';
     PagenotfoundComponent,
     ProjectCardComponent,
     ProjectModalComponent,
+    HomePageComponent
     // ProjectsComponent
   ],
   imports: [
@@ -46,8 +48,9 @@ import { AccordionModule } from 'ngx-bootstrap/accordion';
     CollapseModule.forRoot(),
     FormsModule,
     AccordionModule.forRoot(),
+    HttpClientModule,
   ],
   providers: [ProjectsService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

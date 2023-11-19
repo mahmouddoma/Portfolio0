@@ -1,4 +1,30 @@
 .jumbotron {
     padding: 2rem 1rem;
-    background-color: #e9ecef;
+    color: white;
+}
+.jumbotron h1 {
+    color: #fff;
+}
+
+.jumbotron .text-light {
+    color: #f0f0f0;
+}
+
+.video-container h1,
+.video-container p {
+    color: white;
+}
+.css-falg {
+    padding: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: -0.38px;
+    line-height: 24px;
+    text-align: center;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: rgb(0, 20, 51);
 }

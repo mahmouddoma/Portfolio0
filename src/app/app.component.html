@@ -1,5 +1,13 @@
-<div class="shadow-sm">
-    <app-header></app-header>
-    <app-nav></app-nav>
-</div>
-<router-outlet></router-outlet>
+<div class="video-container">
+    <video autoplay muted loop id="video-background">
+      <source src="assets/vid1.mp4" type="video/mp4" >
+    </video>
+
+    <div class="container-fluid m-0 p-0">
+      <div class="shadow-sm">
+        <app-header></app-header>
+        <app-nav></app-nav>
+      </div>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
