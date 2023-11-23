@@ -78,9 +78,11 @@ body {
   
   a {
     text-decoration: none;
-    color: #007bff;
+    color: #fff;
   }
-  
+  p .btn {
+    font-size: 10px;
+  }
   a:hover {
     text-decoration: underline;
   }

@@ -8,3 +8,7 @@
     background-color: rgb(52, 52, 242);
     color: #fff;
 }
+.carousel-control-prev .carousel-control-prev-icon,
+.carousel-control-next .carousel-control-next-icon {
+  color: #000;
+}

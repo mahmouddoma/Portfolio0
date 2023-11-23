@@ -1,12 +1,17 @@
 import { Component } from '@angular/core';
 import { BsModalRef } from 'ngx-bootstrap/modal';
 import { project } from '../_models/project';
+import { Swiper } from 'swiper';
+let mySwiper;
+
 
 @Component({
   selector: 'app-project-modal',
   templateUrl: './project-modal.component.html',
-  styleUrls: ['./project-modal.component.css']
+  styleUrls: ['./project-modal.component.css'],
 })
+
+
 export class ProjectModalComponent {
   project = {} as project;
   picture: any;
@@ -21,3 +26,4 @@ export class ProjectModalComponent {
   }
   constructor(public bsModalRef: BsModalRef){}
 }
+

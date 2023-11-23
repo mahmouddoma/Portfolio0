@@ -9,13 +9,13 @@
         <img loading="lazy" src="{{ picture }}" alt="Slide" class="d-block w-100">
       </slide>
     </div>
-    <a class="carousel-control-prev" role="button" data-slide="prev" (click)="prevSlide()">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <a class="carousel-control-prev bg-black" role="button" data-slide="prev" (click)="prevSlide()">
+      <span class="carousel-control-prev-icon " aria-hidden="true"></span>
       <span class="sr-only ">Previous</span>
     </a>
-    <a class="carousel-control-next" role="button" data-slide="next" (click)="nextSlide()">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+    <a class="carousel-control-next bg-black" role="button" data-slide="next" (click)="nextSlide()">
+      <span class="carousel-control-next-icon " aria-hidden="true"></span>
+      <span class="sr-only text-dark">Next</span>
     </a>
   
   </carousel>
@@ -23,7 +23,11 @@
   
   <h3 class="mt-2">Description</h3>
   <p>{{project.description}}</p>
-  <p>You can find this project on Github <a href={{project.projectLink}} target="_blank">here</a></p>
+  <p>You can find this project on Github 
+    <button class="btn btn-primary">
+      <a class="text-light " href={{project.projectLink}} target="_blank">here</a>
+    </button>
+  </p>
 
   <hr>
   <div class="d-flex flex-wrap">
